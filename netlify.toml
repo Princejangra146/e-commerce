@@ -1,0 +1,13 @@
+[build]
+  base = ""
+  publish = "out"
+  command = "pnpm build"
+
+[dev]
+  command = "pnpm dev"
+  targetPort = 3000
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
